@@ -20,5 +20,3 @@ export function registerCommands(bot) {
 
   bot.callbackQuery("ping", (ctx) => ctx.answerCallbackQuery({ text: "pong" }))
 
-  bot.on("message:text", (ctx) => ctx.reply(ctx.message.text))
-}
